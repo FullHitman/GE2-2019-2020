@@ -1,4 +1,4 @@
-﻿using System.Collections;
+﻿/*using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Valve.VR;
@@ -37,3 +37,4 @@ public class JetController : MonoBehaviour
         rb.AddForce(rightHandTransform.forward * rightThrust * power * Time.deltaTime);
     }
 }
+*/

@@ -23,6 +23,7 @@ public class Spawner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        
         var settings = GameObjectConversionSettings.FromWorld(World.DefaultGameObjectInjectionWorld, new BlobAssetStore());
         var prefab = GameObjectConversionUtility.ConvertGameObjectHierarchy(Prefab, settings);
         var entityManager = World.DefaultGameObjectInjectionWorld.EntityManager;
@@ -43,6 +44,7 @@ public class Spawner : MonoBehaviour
                 }
             }
         }
+        
     }
 
     // Update is called once per frame

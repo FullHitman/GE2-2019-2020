@@ -16,6 +16,7 @@ public class NoiseSystem : SystemBase
     protected override void OnUpdate()
     {
         // Local variable captured in ForEach
+        
         float dT = Time.DeltaTime;
         this.offset += Time.DeltaTime;
         float offset = this.offset;
@@ -23,24 +24,17 @@ public class NoiseSystem : SystemBase
 
         float lower = Spawner.Instance.lower;
         float upper = Spawner.Instance.upper;
-
         Entities
             .WithName("FlowField_Job")
             .ForEach(
-                (ref NonUniformScale s, ref Translation p, ref Flow f) =>
+                (ref NonUniformScale s, in Translation p, in Flow f) =>
                 {
+                    
                     float scale = Map(Perlin.Noise((p.Value.x + offset) * noiseScale, (p.Value.y + offset) * noiseScale, (p.Value.z + offset) * noiseScale), -1, 1, lower, upper);
                     s = new NonUniformScale() { Value = scale };
-
-                    /*
-                    p = new Translation()
-                    {
-                        // dT is a captured variable
-                        Value = new float3(0, 0, 0)
-                    };
-                    */
+                    
                 }
             )
-            .Schedule();
+            .ScheduleParallel();
     }
 }
