@@ -49,7 +49,7 @@ You have until 12 midnight to submit your solution.
 | Implementing the positions of the traffic lights	| 10 marks |
 | Implementing the traffic light AI |	30 marks |
 | Implementing the car movement |	20 marks |
-| Getting the car to pick random green traffic lights to go to	20 marks |
+| Getting the car to pick random green traffic lights to go to	 | 20 marks |
 | Correct use of git throughout the project |	10 marks |
 
 
