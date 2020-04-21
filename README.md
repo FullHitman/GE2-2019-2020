@@ -26,7 +26,7 @@
 
 This is video of what you will be making in Unity for the lab test:
 
-[![Video](http://img.youtube.com/vi/eM3jH7HW8pM/0.jpg)](http://www.youtube.com/watch?eM3jH7HW8pM)
+[![Video](http://img.youtube.com/vi/eM3jH7HW8pM/0.jpg)](http://www.youtube.com/watch?v=eM3jH7HW8pM)
 
 You don’t have to include the soundtrack (unless of course you want to).
 
